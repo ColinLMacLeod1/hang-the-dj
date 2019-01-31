@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import logo from './htdj90.png';
-import './App.css';
+import logo from './logo90.png';
+import './App.scss';
+import Header from './Header';
+import Playing from './Playing';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-
-        </header>
+        <Header logo={logo} />
+        <div className='app-body'>
+          <Playing />
+        </div>
       </div>
     );
   }
 }
-
-export default App;
