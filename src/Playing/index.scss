@@ -1,7 +1,27 @@
 @import 'styles/variables';
+@import 'styles/mixins';
+@import 'styles/placeholders';
 
 .playing-container {
-  width: 300px;
+  @include component-width-padding;
+  @include component-border-background;
   height: 400px;
-  border-left: 1px solid $highlight-color;
+}
+
+.playing-cover {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.playing-title {
+  @extend %white-text;
+}
+
+.playing-album {
+  @extend %white-text;
+}
+
+.playing-artist {
+  @extend %white-text;
 }

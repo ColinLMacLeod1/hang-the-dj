@@ -1,0 +1,9 @@
+@mixin component-width-padding {
+  width: 300px;
+  padding: 20px;
+}
+
+@mixin component-border-background {
+  border-left: 1px solid $highlight-color;
+  background-image: linear-gradient(to bottom right, $fade-shade-1, $fade-shade-2 100%);
+}

@@ -1,0 +1,53 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+@import 'styles/placeholders';
+
+.queue-container {
+  width: 340px;
+  margin: 20px 0;
+}
+
+.queue-title {
+  @extend %white-text;
+  text-align: left;
+}
+
+.queue-item {
+  @include component-border-background;
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 60px 10px auto;
+  grid-template-rows: auto auto auto;
+  margin: 5px 0;
+}
+
+.track-cover {
+  width: 60px;
+  height: 60px;
+  grid-column: 1;
+  grid-row: 1/4;
+}
+
+.track-text {
+  @extend %white-text;
+  font-size: 0.8em;
+  height: 1.5em;
+  text-align: left;
+}
+
+.track-title {
+  grid-column: 3;
+  grid-row: 1
+}
+
+.track-album {
+  grid-column: 3;
+  grid-row: 2
+}
+
+.track-artist {
+  grid-column: 3;
+  grid-row: 3
+}

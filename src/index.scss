@@ -1,3 +1,7 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+@import 'styles/placeholders';
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: $page-background-color;
 }
 
 code {
